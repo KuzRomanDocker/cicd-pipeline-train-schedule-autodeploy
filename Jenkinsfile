@@ -84,7 +84,7 @@ pipeline {
         }
     }
     post {
-        clenup{
+        cleanup{
            kubernetesDeploy(
                    kubeconfigId: 'kubeconfig',
                    configs: 'train-schedule-kube-canary.yml',
